@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.pagestudy.dao.BoardDAO">
+
+    <select id="getList" parameterType="com.example.pagestudy.vo.boardVO" resultType="com.example.pagestudy.vo.boardVO">
+            select
+                *
+            from
+                qnainfo
+            Order by qnaNum desc
+            LIMIT #{recordCountPerPage} OFFSET #{firstIndex}
+    </select>
+
+    <select id="getListCnt" parameterType="com.example.pagestudy.vo.boardVO" resultType="java.lang.Integer">
+        select
+            count(*)
+        from
+        qnainfo
+    </select>
+
+</mapper>
