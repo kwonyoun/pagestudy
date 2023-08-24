@@ -32,7 +32,7 @@ dependencies {
 	implementation group: 'org.glassfish.web', name: 'jakarta.servlet.jsp.jstl', version: '2.0.0'
 	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 	runtimeOnly 'com.mysql:mysql-connector-j' 
-	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.2'	
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.2'
 }	
 
 tasks.named('test') {

@@ -4,7 +4,7 @@
 
 <mapper namespace="com.example.pagestudy.dao.BoardDAO">
 
-    <select id="getList" parameterType="com.example.pagestudy.vo.boardVO" resultType="com.example.pagestudy.vo.boardVO">
+    <select id="getList" parameterType="com.example.pagestudy.vo.PageVO" resultType="com.example.pagestudy.vo.BoardVO">
             select
                 *
             from
@@ -13,7 +13,7 @@
             LIMIT #{recordCountPerPage} OFFSET #{firstIndex}
     </select>
 
-    <select id="getListCnt" parameterType="com.example.pagestudy.vo.boardVO" resultType="java.lang.Integer">
+    <select id="getListCnt" parameterType="com.example.pagestudy.vo.PageVO" resultType="java.lang.Integer">
         select
             count(*)
         from

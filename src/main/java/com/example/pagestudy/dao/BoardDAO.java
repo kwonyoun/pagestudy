@@ -10,7 +10,7 @@ import com.example.pagestudy.vo.PageVO;
 @Mapper
 public interface BoardDAO {
 
-    public List<PageVO>getList(PageVO searchVO);
+    public List<BoardVO>getList(PageVO searchVO);
     public int getListCnt(PageVO searchVO);
     
 }

@@ -1,1 +1,1 @@
-test.jsp
+http://localhost:8080/board/list

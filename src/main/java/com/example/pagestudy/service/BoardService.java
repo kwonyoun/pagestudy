@@ -13,14 +13,14 @@ import com.example.pagestudy.vo.PageVO;
 public class BoardService {
 
     @Autowired
-    BoardDAO mapper;
+    BoardDAO dao;
     
-    public List<PageVO> getList(PageVO searchVO) {
-        return mapper.getList(searchVO); 
+    public List<BoardVO> getList(PageVO searchVO) {
+        return dao.getList(searchVO); 
     }
 
     public int getListCnt(PageVO searchVO) {
-        return mapper.getListCnt(searchVO);
+        return dao.getListCnt(searchVO);
     }
     
 }

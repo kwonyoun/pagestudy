@@ -3,7 +3,7 @@ package com.example.pagestudy.vo;
 import lombok.Data;
 
 @Data
-public class BoardVO {
+public class BoardVO{
 
     int qnaNum; 
 	String qnaFil;
